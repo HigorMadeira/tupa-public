@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "tupa_dependencies_core"
+		},
+		{
+			"path": "tupa_domain"
+		},
+		{
+			"path": "tupa_ui_core"
+		},
+		{
+			"path": "tupa_backend"
+		},
+		{
+			"path": "tupa_application_core"
+		},
+		{
+			"path": "tupa_web"
+		},
+		{
+			"path": "tupa_mobile"
+		},
+	],
+	"settings": {}
+}
