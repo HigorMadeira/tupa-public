@@ -17,19 +17,17 @@ class ProjectListMobile extends StatelessWidget {
             child: CircularProgressIndicator(),
           ),
           loaded: (s) {
-            return Column(
-              children: [
-                ListView.separated(
-                  padding: const EdgeInsets.symmetric(vertical: 8),
-                  physics: const BouncingScrollPhysics(),
-                  itemCount: s.projects.length,
-                  separatorBuilder: (context, index) =>
-                      const SizedBox(height: 16),
-                  itemBuilder: (context, index) {
-                    return ProjectCard(project: s.projects[index]);
-                  },
-                ),
-              ],
+            return Expanded(
+              child: ListView.separated(
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                physics: const BouncingScrollPhysics(),
+                itemCount: s.projects.length,
+                separatorBuilder: (context, index) =>
+                    const SizedBox(height: 16),
+                itemBuilder: (context, index) {
+                  return ProjectCard(project: s.projects[index]);
+                },
+              ),
             );
           },
         );
